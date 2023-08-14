@@ -23,17 +23,17 @@ convertBtn.addEventListener('click', function(){
     }else{
         let feet = (inputEl.value * 3.281).toFixed(3)
         let meters =(inputEl.value /3.281).toFixed(3)
-        lengthEL.innerHTML= "<h4>Length (Meter/Feet)</h4>" + `<p>${inputEl.value} meters = ${feet} feet | ${inputEl.value} feet = ${meters} meters </p>`
+        lengthEL.innerHTML += `<p>${inputEl.value} meters = ${feet} feet | ${inputEl.value} feet = ${meters} meters </p>`
 
         let gallons = (inputEl.value * 0.264).toFixed(3)
         let liters = (inputEl.value / 0.264).toFixed(3)
 
-        volumeEL.innerHTML= "<h4><h4>Volume (Liters/Gallons)</h4></h4>" +  `<p>${inputEl.value} liters = ${gallons} gallons | ${inputEl.value} gallons = ${liters} liters  </p>`
+        volumeEL.innerHTML += `<p>${inputEl.value} liters = ${gallons} gallons | ${inputEl.value} gallons = ${liters} liters  </p>`
 
         let kilograms = (inputEl.value * 2.204).toFixed(3)
         let  pounds = (inputEl.value / 2.204).toFixed(3)
         
-        massEL.innerHTML = "<h4>Mass (Kilograms/Pounds)</h4>" + `<p>${inputEl.value} kilos = ${pounds} pounds | ${inputEl.value} pounds = ${kilograms} kilos</p>`
+        massEL.innerHTML += `<p>${inputEl.value} kilos = ${pounds} pounds | ${inputEl.value} pounds = ${kilograms} kilos</p>`
     }
     inputEl.value= ""
 })
